@@ -1,0 +1,6 @@
+.couponsContainer {
+    display: flex;/*שורה אחת */
+    flex-wrap: wrap; /* מאפשר קיפול לשורות חדשות אם אין מקום */
+    justify-content: space-around; /* ריווח בין הקופונים */
+    padding: 20px; /* ריווח פנימי בקונטיינר */
+}

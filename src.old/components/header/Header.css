@@ -1,0 +1,43 @@
+/* General navbar styling */
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    /* height: auto; */
+    padding: 10px 10px 10px 10px;
+    background-color: #960200; 
+    color: #FFF4EC; /* Text color */
+}
+
+/* Logo section */
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation links container */
+.header-links {
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    margin: 0 10px;
+    padding: 0;
+}
+
+/* Individual navigation link */
+.header-links li {
+    margin: 0 10px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.header-links a:hover {
+    color: #ffc107;
+}

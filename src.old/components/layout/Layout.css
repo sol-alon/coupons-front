@@ -1,0 +1,20 @@
+.layout { 
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  grid-template-rows: 10% 85% 5%; 
+}
+
+.layout > header, footer {
+  grid-column: span 12;
+}
+
+.layout > aside {
+  grid-column: span 5;
+}
+
+.layout > main {
+  grid-column: span 7;
+}

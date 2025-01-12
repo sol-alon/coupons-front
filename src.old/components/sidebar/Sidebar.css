@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.aside {
+    position: fixed; /* מיקום קבוע */
+    top: 0;
+    left: 0;
+    width: 60px; /* פס צר */
+    height: 100%; /* גובה מלא */
+    background-color: #007bff; /* Navbar background color */
+    color: white; /* צבע טקסט */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.aside li {
+    margin: 15px 0;
+}
+
+.aside a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.aside a:hover {
+    color: #00bcd4;
+}

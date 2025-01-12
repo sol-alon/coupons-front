@@ -1,0 +1,88 @@
+/* מיכל הקופון */
+.coupon {
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* מוודא שהכרטיס מתחיל מלמעלה */
+    flex-direction: row; /* הצג את התמונה מצד אחד והפרטים מצד שני */
+    width: 200px; /* רוחב מופחת */
+    border: none;
+    border-radius: 15px; /* פינות מעוגלות */
+    overflow: hidden;
+    background: linear-gradient(135deg, #007bff, #fad0c4); /* גרדיאנט רקע */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* הצללה */
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 15px; /* מרווח מופחת */
+}
+
+.coupon-card:hover {
+    transform: translateY(-7px); /* הרמת הכרטיס */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* הצללה עמוקה יותר */
+}
+
+/* תמונת הקופון */
+.coupon-image {
+    width: 80px; /* רוחב קטן יותר לתמונה */
+    height: 80px; /* גובה אחיד לתמונה */
+    object-fit: cover;
+    border-radius: 10px; /* פינות מעוגלות לתמונה */
+    margin-right: 15px; /* מרווח בין התמונה לפרטים */
+}
+
+/* פרטי הקופון */
+.coupon-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* מוודא שיש רווח בין כל שדה */
+    padding: 10px;
+    color: #fff; /* טקסט לבן */
+    font-family: 'Arial', sans-serif;
+    width: 100%; /* תופס את כל הרוחב שנותר */
+}
+
+.coupon-title {
+    font-size: 16px; /* גודל טקסט קטן יותר */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 1.2px;
+}
+
+.coupon-description,
+.coupon-company,
+.coupon-price,
+.coupon-dates,
+.coupon-amount {
+    font-size: 12px; /* טקסט קטן יותר */
+    line-height: 1.4;
+    margin: 4px 0;
+}
+
+/* כפתור בתחתית הכרטיס */
+.coupon button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* מרכז את הכפתור */
+    padding: 8px 15px; /* כפתור קטן יותר */
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.coupon-button:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* התאמה למובייל */
+@media (max-width: 600px) {
+    .coupon-card {
+        width: 90%; /* הכרטיס יתפרס כמעט על כל הרוחב */
+    }
+}

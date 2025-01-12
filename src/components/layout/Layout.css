@@ -1,0 +1,34 @@
+/* General layout styling */
+.layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Sidebar (1fr) and Main Content (3fr) */
+  grid-template-rows: auto 80% 7%; /* Header, Content, Footer */
+  height: 100vh;
+}
+
+/* Header spans the entire width */
+.layout > header {
+  grid-column: span 12; /* Span both columns */
+  text-align: center;
+}
+
+/* Sidebar on the left */
+.layout > aside {
+  grid-column: span 2;
+}
+
+/* Main content */
+.layout > main {
+  grid-column: span 10;
+}
+
+/* Footer spans the entire width */
+.layout > footer {
+  grid-column: span 12; /* Span both columns */
+  background-color: #333; /* Dark background */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
