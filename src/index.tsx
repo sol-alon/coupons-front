@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';  // הוספנו את ה- BrowserRouter
-
+//this is an example for git collaboration 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
